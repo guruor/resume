@@ -1,0 +1,295 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/jsonresume/resume-schema/master/schema.json
+---
+meta:
+  # theme: jsonresume-theme-elegant
+  theme: jsonresume-theme-stackoverflow
+basics:
+  name: Govind Singh
+  label: Senior Software Engineer
+  image: https://avatars0.githubusercontent.com/u/14184045?s=400&u=aade382a84cf999ef364f2424ebf2c42c1c84078&v=4
+  email: connect.govinds@gmail.com
+  phone: "+919944299002"
+  url: https://govind.guru
+  summary:
+    Results-oriented versatile Backend Developer with 8 years of experience
+    developing, and managing complex Backend Architecture and robust digital products.
+    Excellent leadership record of leading development teams in enterprise-wide development
+    projects. Worked with Python Django for 3 years and NodeJs for 2 years. Skilled
+    in JavaScript, Python, Rest APIs, Express Js, Docker, GIT, AWS and Pipelines.
+  location:
+    address: ""
+    postalCode: ""
+    city: Udaipur
+    region: Rajasthan
+    countryCode: IN
+  profiles:
+    - network: LinkedIn
+      username: connectgovinds
+      url: https://www.linkedin.com/in/connectgovinds
+    - network: Github
+      username: guruor
+      url: https://www.github.com/guruor
+  # - network: HackerRank
+  #   username: govindsinghr3
+  #   url: https://www.hackerrank.com/govindsinghr3
+work:
+  - name: PeepalCo (CoinSwitch)
+    location: Bengaluru, India
+    description: PeepalCo is a canopy for brands serving India with tailored wealth-tech products, Making Money Equal for All.
+    url: https://peepal.co/
+    startDate: "2021-12-20"
+    position: Senior Software Engineer
+    summary: ""
+    highlights:
+      - Developed and maintained a dedicated service for fee and discount management,
+      - Contributed towards the relibility by preparing multiple SOPs and dashboards
+      - Prepared documentation of various services for easy onboarding
+      - Provided regular feedbacks on using best practices wherever required.
+  - name: UrbanPiper Technology Pvt Ltd
+    location: Bengaluru, India
+    description:
+      UrbanPiper is the leading SaaS platform for restaurants and food businesses,
+      providing various services to help manage operations more efficiently.
+    url: https://www.urbanpiper.com/
+    startDate: "2019-12-04"
+    endDate: "2021-11-24"
+    position: Senior Software Engineer
+    summary: ""
+    highlights:
+      - Evaluated product requirements, specifications and developed product modules.
+      - Learned and used OLAP databases and GraphQL.
+      - Developed django management commands to ease up the redundent tasks.
+      - Provided regular feedbacks on using best practices wherever required.
+      - Contributed in imporoving test coverage of multiple products.
+      - Converted existing Django SSR project into GraphQL based APIs.
+  - name: Cartoon Mango Studios
+    location: Bengaluru, India
+    description:
+      Cartoon Mango is a multidisciplinary design and development studio
+      specialising in UI/UX, Custom Application Development, Enterprise AI and ML, Blockchain,
+      AR/VR Application Development and Digital Transformation.
+    url: http://www.cartoonmango.com/
+    position: Senior Software Engineer
+    startDate: "2016-02-02"
+    endDate: "2019-11-30"
+    summary: ""
+    highlights:
+      - Evaluated project requirements, specifications and developed software applications
+        that surpassed client expectations.
+      - Worked with project managers, developers, quality assurance and customers to resolve
+        technical issues.
+      - Discussed project progress with customers, collected feedback on different stages
+        and directly addressed concerns.
+      - Introduced methodologies and best practices to software development division to
+        enhance product definition and application customization.
+      - Trained and mentored junior developers and engineers, teaching skills in JavaScript
+        and working to improve overall team performance.
+education:
+  - institution: Vellore Institute of Technology, Vellore
+    url: https://vit.ac.in/
+    area: Computer Application
+    studyType: Master
+    startDate: "2014-07-01"
+    endDate: "2016-07-01"
+  - institution: Mohan Lal Sukhadia University, Udaipur
+    url: https://www.mlsu.ac.in/
+    area: Computer Applications
+    studyType: Bachelor
+    startDate: "2010-07-01"
+    endDate: "2013-07-01"
+skills:
+  - name: Languages
+    keywords:
+      - Python
+      - JavaScript
+      - C
+      - Rust
+  - name: Frameworks
+    keywords:
+      - Django
+      - ExpressJS
+  - name: Databases
+    keywords:
+      - MYSQL
+      - MongoDB
+      - Firebase
+      - ClickHouse
+  - name: Tools
+    keywords:
+      - Nginx
+      - Gunicorn
+      - Docker
+      - Bitbucket Pipeline
+      - Gitlab CI/CD
+      - Postman
+      - Insomnia
+      - Confluence
+      - Vim
+      - VS Code
+      - PyCharm
+      - Jira
+      - Git
+      - Redis
+      - RQ worker
+  - name: Other
+    keywords:
+      - Leadership
+      - Time Management
+projects:
+  - name: Atlas
+    description:
+      Product comprises order and customer analytics, marketing campaign
+      creation and invoice module.
+    startDate: "2019-12-23"
+    roles:
+      - Backend Developer
+    type: application
+    highlights:
+      - Learned OLAP databases, migrated existing analytics solution from Exasol to ClickHouse
+        DB.
+      - Ingested MySql data into ClickHouse using Airflow ETL.
+      - Designed the core architecture of Invoice Processing module. A module to send
+        periodic notifications and collect payments for invoices created in QuickBooks
+        for the merchants.
+      - Developed periodic tasks with RQ worker to maintain active auth token and to send
+        periodic notifications.
+      - Developed django management commands to ease up the redundent tasks.
+      - Integrated Razorpay payment links
+      - Learned GraphQL and applied it while migrating existing SSR based CRM product
+        to APIs.
+      - Documented the critical parts of the codebase
+      - Reviewed pull requests
+    keywords:
+      - Python Django
+      - ClickHouse
+      - SqlAlchemy
+      - MySQL
+      - GraphQL
+      - RazorPay
+      - Pytest
+      - Github Issues
+      - Time Management
+      - Code Review
+    url: https://atlas.urbanpiper.com/
+  - name: Portea
+    description: A mini app for Portea.
+    startDate: "2019-08-01"
+    endDate: "2019-08-30"
+    roles:
+      - Backend Team Lead
+    type: application
+    highlights:
+      - Designed the core architecture of the project.
+      - Managed a team of 2 developers
+      - Reviewed pull requests
+      - Handled code deployment with Docker and Gitlab CI/CD
+    keywords:
+      - Node Express Js
+      - MySQL
+      - Knex
+      - Docker
+      - Gitlab CI/CD
+      - Leadership
+      - Time Management
+      - Code Review
+      - Swagger
+    url: https://www.porteaincontrol.com/
+  - name: Medwisor
+    description:
+      A platform which provides expert opinions and getting appointments
+      on the go.
+    startDate: "2018-12-01"
+    endDate: "2019-04-01"
+    roles:
+      - Backend Developer
+    type: application
+    highlights:
+      - Designed the core architecture of the project.
+      - Prepared Node.js ES6 boilerplate with Sequelize.
+      - Developed 3 different portal Patient, Hospital and Admin, Each as a microservice
+        communicating with each other using the HTTP protocol.
+      - Prepared an image scale utility with Sharp
+      - Prepared a video scale utility with FFMPEG
+      - Prepared a pdf converter utility with Puppeteer and Headless Chrome
+      - Did bitbucket pipeline setup
+      - goCash payment gateway integration
+    keywords:
+      - Node Express Js
+      - MySQL
+      - Sequelize
+      - Bash
+      - Sharp
+      - FFMPEG
+      - Docker
+      - Puppeteer
+      - Headless Chrome
+      - Bitbucket pipeline
+    url: https://www.medwisor.com/
+  - name: Cricket.com
+    description:
+      A platform to provide cricket updates including score, schedules, articles,
+      fantasy points, etc.
+    startDate: "2018-07-01"
+    endDate: "2018-12-01"
+    roles:
+      - Backend Developer
+    type: application
+    highlights:
+      - Designed the core architecture of the project.
+      - Developed CRUD APIs for authentication, league, event, match, team, player, articles
+        modules.
+      - Worked on cronjobs to trigger events when the game status changes.
+      - Worked on firebase socket for realtime updates and notifications.
+      - Used Redis for caching scorecard data.
+      - Used Redis as a message broker between the API server and the Java parser (Parser
+        was responsible for getting data from third parties like cricketapi, opta, etc
+        and storing it to DB and Redis)
+      - Managed code deployment using Docker.
+    keywords:
+      - Node Express Js
+      - MongoDB
+      - Firebase
+      - Mongoose
+      - Redis
+      - Bash
+      - Docker
+    url: https://www.cricket.com/
+  - name: Machine & Motors
+    description: "eCommerce portal for types of machinery "
+    startDate: "2017-03-01"
+    endDate: "2018-01-01"
+    roles:
+      - Backend Developer
+      - Frontend Developer
+    type: application
+    highlights:
+      - Wrote the Buyer module APIs i.e. authentication, Cart and wishlist management.
+      - Wrote order and review management module.
+      - Developed product inventory module which includes Product CRUD, Product media
+        uploads and scaling.
+      - Developed deployment script and Cron Jobs for auto backup.
+      - Generated pdf invoice with pdfkit.
+      - Instamojo payment gateway integration
+    keywords:
+      - Python Django
+      - JQuery
+      - MySQL
+      - AWS S3
+      - AWS SES
+      - AWS SES
+      - PIL
+      - FFMPEG
+      - Nginx
+      - Bash
+      - Pdfkit
+      - wkhtmltopdf
+    url: https://www.machinenmotor.com
+languages:
+  - language: Hindi
+  - language: English
+interests:
+  - name: Entertainment
+    keywords:
+      - Movies
+      - Tv Series
+  - name: Mentoring
