@@ -1,0 +1,55 @@
+name: release
+
+on:
+  push:
+    branches: [main]
+
+env:
+  RESUME_TARGET: release/resume.pdf
+
+jobs:
+  publish:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v4
+      - name: Use Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22.5.1"
+
+      - name: Install requirements
+        run: npm ci
+
+      - name: Rendering html
+        run: npm run to_html
+
+      - name: Rendering pdf
+        run: npm run to_pdf
+
+      - name: Set version as short sha
+        run: echo "VERSION=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
+
+      - name: Get asset name
+        run: echo "RESUME_NAME=`basename ${RESUME_TARGET}`" >> $GITHUB_ENV
+
+      - name: Create release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ env.VERSION }}
+          release_name: Release ${{ env.VERSION }}
+          draft: false
+          prerelease: false
+
+      - name: Upload pdf
+        id: upload-release-pdf
+        uses: actions/upload-release-asset@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          upload_url: ${{ steps.create_release.outputs.upload_url }}
+          asset_path: ${{ env.RESUME_TARGET }}
+          asset_name: ${{ env.RESUME_NAME }}
+          asset_content_type: application/pdf
