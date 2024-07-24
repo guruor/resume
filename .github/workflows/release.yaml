@@ -59,3 +59,15 @@ jobs:
           asset_path: ${{ env.RESUME_TARGET }}
           asset_name: ${{ env.RESUME_NAME }}
           asset_content_type: application/pdf
+
+      - name: Prepare GitHub Pages deployment
+        run: |
+          mkdir gh-pages
+          cp release/resume.html gh-pages/index.html
+          cp release/resume.pdf gh-pages/
+
+      - name: Deploy to GitHub Pages
+        uses: peaceiris/actions-gh-pages@v3
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: gh-pages
