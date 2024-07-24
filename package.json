@@ -2,15 +2,14 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"to_json": "mkdir -p release; yq -o=json resume.yaml > ./release/resume.json",
-    "pre_to_json": "npm run to_json",
-		"to_html": "resumed -o ./release/resume.html ./release/resume.json",
-    "pre_to_pdf": "npm run to_json",
-    "to_pdf": "npm run to_json; node index.js"
+		"to_json": "node index.js --json",
+		"to_html": "node index.js --html",
+		"to_pdf": "node index.js --pdf"
 	},
 	"dependencies": {
 		"jsonresume-theme-stackoverflow": "^2.0.2",
 		"puppeteer": "^22.13.1",
-		"resumed": "^3.0.1"
+		"resumed": "^3.0.1",
+		"yaml": "^2.0.1"
 	}
 }

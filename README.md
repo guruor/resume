@@ -30,6 +30,8 @@ npm run to_html
 npm run to_pdf
 
 # To specify the theme manually, use:
+npm run to_json
+npm install jsonresume-theme-elegant
 npx resumed export -o ./release/resume.html --theme jsonresume-theme-elegant
 ```
 
