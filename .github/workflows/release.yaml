@@ -65,6 +65,7 @@ jobs:
           mkdir gh-pages
           cp release/resume.html gh-pages/index.html
           cp release/resume.pdf gh-pages/
+          echo "resume.govind.guru" > gh-pages/CNAME
 
       - name: Deploy to GitHub Pages
         uses: peaceiris/actions-gh-pages@v3
