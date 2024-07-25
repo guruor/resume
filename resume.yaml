@@ -6,16 +6,18 @@ meta:
 basics:
   name: Govind Singh
   label: Senior Software Engineer
-  image: https://avatars0.githubusercontent.com/u/14184045?s=400&u=aade382a84cf999ef364f2424ebf2c42c1c84078&v=4
+  image: https://gravatar.com/userimage/210390833/d2be84a266c4e13deca5103595e454ad.jpeg?size=256
+  # image: https://avatars0.githubusercontent.com/u/14184045?s=400&u=aade382a84cf999ef364f2424ebf2c42c1c84078&v=4
   email: connect.govinds@gmail.com
   phone: "+919944299002"
   url: https://govind.guru
   summary:
-    Results-oriented versatile Backend Developer with 8 years of experience
-    developing, and managing complex Backend Architecture and robust digital products.
-    Excellent leadership record of leading development teams in enterprise-wide development
-    projects. Worked with Python Django for 3 years and NodeJs for 2 years. Skilled
-    in JavaScript, Python, Rest APIs, Express Js, Docker, GIT, AWS and Pipelines.
+    Results-oriented and versatile Backend Developer with 8 years of experience in developing and managing complex backend
+    architectures and robust digital products. Proven track record of leading development teams in enterprise-wide projects,
+    with a focus on quality, delivery, and reliability. Formerly with CoinSwitch, UrbanPiper, and Cartoon Mango Digital.
+    Passionate about automating repetitive workflows and enhancing operational efficiency. Skilled mentor, having guided
+    over 10+ team members. Strong time management skills and commitment to delivering high-quality solutions.
+    Skilled in Python, JavaScript, Golang, Rest APIs, Docker, GIT, AWS, Pipelines and Grafana.
   location:
     address: ""
     postalCode: ""
@@ -41,10 +43,12 @@ work:
     position: Senior Software Engineer
     summary: ""
     highlights:
-      - Developed and maintained a dedicated service for fee and discount management,
-      - Contributed towards the relibility by preparing multiple SOPs and dashboards
-      - Prepared documentation of various services for easy onboarding
-      - Provided regular feedbacks on using best practices wherever required.
+      - Developed and maintained a dedicated service for fee and discount management, provided more flexibility of configuring fee and discounts for different assets
+      - Developed offer generation module for better flexibility feein/feeout construct, it stored the structured details of various stages of fee, discount, GST and TDS for better audit and tracibility.
+      - Contributed towards the relibility by preparing multiple SOPs and dashboards, resulted in faster incident response
+        times.
+      - Created comprehensive documentation of various in house services, reduced onboarding time for new hires by 40%
+      - Conducted training sessions, promoting best practices and reducing code defects by 15%.
   - name: UrbanPiper Technology Pvt Ltd
     location: Bengaluru, India
     description:
@@ -102,35 +106,33 @@ skills:
     keywords:
       - Python
       - JavaScript
+      - Golang
       - C
       - Rust
   - name: Frameworks
     keywords:
       - Django
+      - Flask
       - ExpressJS
+      - Gin
   - name: Databases
     keywords:
+      - PostgreSQL
       - MYSQL
       - MongoDB
       - Firebase
       - ClickHouse
   - name: Tools
     keywords:
-      - Nginx
-      - Gunicorn
-      - Docker
-      - Bitbucket Pipeline
-      - Gitlab CI/CD
-      - Postman
-      - Insomnia
-      - Confluence
-      - Vim
-      - VS Code
-      - PyCharm
-      - Jira
       - Git
+      - Vim
+      - Docker
+      - Nginx
+      - Grafana
+      - Redash
+      - Jira
       - Redis
-      - RQ worker
+      - CI Pipelines
   - name: Other
     keywords:
       - Leadership
