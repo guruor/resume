@@ -42,7 +42,3 @@ If you encounter issues related to `libnss`, `libasound`, or other dependencies,
 ```sh
 sudo apt install libgtk-3-dev libnotify-dev libgconf-2-4 libnss3 libxss1 libasound2
 ```
-
-## 🎯 Future Plans
-
-- **GitHub Workflows:** Automate the publishing of the static resume and PDF to keep your latest profile and PDF URLs updated across multiple platforms.
