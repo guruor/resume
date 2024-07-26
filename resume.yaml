@@ -31,6 +31,9 @@ basics:
     - network: Github
       username: guruor
       url: https://www.github.com/guruor
+    - network: Calendly
+      username: connect-govinds
+      url: https://calendly.com/connect-govinds
   # - network: HackerRank
   #   username: govindsinghr3
   #   url: https://www.hackerrank.com/govindsinghr3
@@ -40,6 +43,7 @@ work:
     description: PeepalCo is a canopy for brands serving India with tailored wealth-tech products, Making Money Equal for All.
     url: https://peepal.co/
     startDate: "2021-12-20"
+    endDate: "2024-07-04"
     position: Senior Software Engineer
     summary: ""
     highlights:
@@ -60,34 +64,29 @@ work:
     position: Senior Software Engineer
     summary: ""
     highlights:
-      - Evaluated product requirements, specifications and developed product modules.
-      - Learned and used OLAP databases and GraphQL.
-      - Developed django management commands to ease up the redundent tasks.
-      - Provided regular feedbacks on using best practices wherever required.
-      - Contributed in imporoving test coverage of multiple products.
-      - Converted existing Django SSR project into GraphQL based APIs.
+      - Evaluated product requirements and specifications, developing various product modules.
+      - Learned and utilized OLAP databases and GraphQL for enhanced data management and interaction.
+      - Developed Django management commands to automate redundant tasks, increasing efficiency.
+      - Provided regular feedback on best practices, contributing to overall code quality.
+      - Improved test coverage across multiple products, ensuring robust and reliable software.
+      - Converted existing Django SSR projects into GraphQL-based APIs, enhancing application performance and scalability.
   - name: Cartoon Mango Studios
     location: Bengaluru, India
     description:
       Cartoon Mango is a multidisciplinary design and development studio
       specialising in UI/UX, Custom Application Development, Enterprise AI and ML, Blockchain,
       AR/VR Application Development and Digital Transformation.
-    url: http://www.cartoonmango.com/
+    url: https://www.cartoonmango.com/
     position: Senior Software Engineer
     startDate: "2016-02-02"
     endDate: "2019-11-30"
     summary: ""
     highlights:
-      - Evaluated project requirements, specifications and developed software applications
-        that surpassed client expectations.
-      - Worked with project managers, developers, quality assurance and customers to resolve
-        technical issues.
-      - Discussed project progress with customers, collected feedback on different stages
-        and directly addressed concerns.
-      - Introduced methodologies and best practices to software development division to
-        enhance product definition and application customization.
-      - Trained and mentored junior developers and engineers, teaching skills in JavaScript
-        and working to improve overall team performance.
+      - Evaluated project requirements and specifications, developing software applications that surpassed client expectations.
+      - Collaborated with project managers, developers, quality assurance, and customers to resolve technical issues efficiently.
+      - Discussed project progress with customers, collected feedback at various stages, and directly addressed concerns.
+      - Introduced methodologies and best practices to enhance product definition and application customization.
+      - Trained and mentored junior developers in JavaScript, improving overall team performance and skill levels.
 education:
   - institution: Vellore Institute of Technology, Vellore
     url: https://vit.ac.in/
@@ -138,29 +137,63 @@ skills:
       - Leadership
       - Time Management
 projects:
+  - name: Offer Service
+    description: The Offer Service is a multi-tenant backend service designed to handle various asset types and complex calculation logic for trading activities. It includes comprehensive validation checks and stages calculations to enhance trading accuracy, auditability, and system reliability
+    startDate: "2022-04-28"
+    endDate: "2023-01-04"
+    roles:
+      - Project lead
+    type: application
+    highlights:
+      - Designed and implemented a multi-tenant Offer Service supporting multiple asset types with comprehensive LLD and HLD documentation.
+      - Developed complex calculation logic and multiple validation checks, improving trading accuracy and efficiency.
+      - Structured calculations into stages for enhanced auditability and understanding.
+      - Learned Golang and implemented the service, ensuring high performance and reliability.
+      - Managed monitoring and dashboarding, facilitating better performance tracking and issue detection.
+      - Collaborated with cross-functional teams to ensure seamless integration of the service.
+    keywords:
+      - Golang
+      - Gin
+      - Redis
+      - GRPC
+    # url: ""
+  - name: FADE (Fee and Discount Engine)
+    description: FADE is a multi-tenant fee and discount service designed to support various asset types, incorporating configurable parameters to ensure accurate calculations. It features comprehensive monitoring and user-friendly configuration uploads, enhancing both performance and usability.
+    startDate: "2023-11-07"
+    endDate: "2024-02-15"
+    roles:
+      - Project lead
+    type: application
+    highlights:
+      - Designed and implemented a multi-tenant FADE service to support multiple asset types with detailed LLD and HLD documentation.
+      - Developed configurable fee and discount parameters, including asset type, asset name, order source, order type, trade amount, trade volume, and user ID.
+      - Managed monitoring and created dashboards to track service performance and identify issues.
+      - Enabled business-friendly sheet uploads for easy configuration of fee and discount parameters.
+    keywords:
+      - Golang
+      - Gin
+      - Grule
+      - Redis
+      - S3
+    # url: ""
   - name: Atlas
     description:
       Product comprises order and customer analytics, marketing campaign
       creation and invoice module.
     startDate: "2019-12-23"
+    endDate: "2019-08-30"
     roles:
       - Backend Developer
     type: application
     highlights:
-      - Learned OLAP databases, migrated existing analytics solution from Exasol to ClickHouse
-        DB.
-      - Ingested MySql data into ClickHouse using Airflow ETL.
-      - Designed the core architecture of Invoice Processing module. A module to send
-        periodic notifications and collect payments for invoices created in QuickBooks
-        for the merchants.
-      - Developed periodic tasks with RQ worker to maintain active auth token and to send
-        periodic notifications.
-      - Developed django management commands to ease up the redundent tasks.
-      - Integrated Razorpay payment links
-      - Learned GraphQL and applied it while migrating existing SSR based CRM product
-        to APIs.
-      - Documented the critical parts of the codebase
-      - Reviewed pull requests
+      - Migrated existing analytics solution from Exasol to ClickHouse, learning OLAP databases.
+      - Ingested MySQL data into ClickHouse using Airflow ETL for efficient data processing.
+      - Designed core architecture for an Invoice Processing module to manage periodic notifications and payment collections for QuickBooks invoices.
+      - Developed periodic tasks with RQ worker for maintaining active auth tokens and sending notifications.
+      - Created Django management commands to automate redundant tasks, enhancing productivity.
+      - Integrated Razorpay payment links to streamline payment processes.
+      - Applied GraphQL to migrate an existing SSR-based CRM product to APIs, improving data interaction.
+      - Documented critical parts of the codebase and reviewed pull requests to ensure code quality.
     keywords:
       - Python Django
       - ClickHouse
@@ -173,60 +206,6 @@ projects:
       - Time Management
       - Code Review
     url: https://atlas.urbanpiper.com/
-  - name: Portea
-    description: A mini app for Portea.
-    startDate: "2019-08-01"
-    endDate: "2019-08-30"
-    roles:
-      - Backend Team Lead
-    type: application
-    highlights:
-      - Designed the core architecture of the project.
-      - Managed a team of 2 developers
-      - Reviewed pull requests
-      - Handled code deployment with Docker and Gitlab CI/CD
-    keywords:
-      - Node Express Js
-      - MySQL
-      - Knex
-      - Docker
-      - Gitlab CI/CD
-      - Leadership
-      - Time Management
-      - Code Review
-      - Swagger
-    url: https://www.porteaincontrol.com/
-  - name: Medwisor
-    description:
-      A platform which provides expert opinions and getting appointments
-      on the go.
-    startDate: "2018-12-01"
-    endDate: "2019-04-01"
-    roles:
-      - Backend Developer
-    type: application
-    highlights:
-      - Designed the core architecture of the project.
-      - Prepared Node.js ES6 boilerplate with Sequelize.
-      - Developed 3 different portal Patient, Hospital and Admin, Each as a microservice
-        communicating with each other using the HTTP protocol.
-      - Prepared an image scale utility with Sharp
-      - Prepared a video scale utility with FFMPEG
-      - Prepared a pdf converter utility with Puppeteer and Headless Chrome
-      - Did bitbucket pipeline setup
-      - goCash payment gateway integration
-    keywords:
-      - Node Express Js
-      - MySQL
-      - Sequelize
-      - Bash
-      - Sharp
-      - FFMPEG
-      - Docker
-      - Puppeteer
-      - Headless Chrome
-      - Bitbucket pipeline
-    url: https://www.medwisor.com/
   - name: Cricket.com
     description:
       A platform to provide cricket updates including score, schedules, articles,
@@ -237,15 +216,11 @@ projects:
       - Backend Developer
     type: application
     highlights:
-      - Designed the core architecture of the project.
-      - Developed CRUD APIs for authentication, league, event, match, team, player, articles
-        modules.
-      - Worked on cronjobs to trigger events when the game status changes.
-      - Worked on firebase socket for realtime updates and notifications.
-      - Used Redis for caching scorecard data.
-      - Used Redis as a message broker between the API server and the Java parser (Parser
-        was responsible for getting data from third parties like cricketapi, opta, etc
-        and storing it to DB and Redis)
+      - Designed the core architecture for cricket.com.
+      - Developed CRUD APIs for authentication, league, event, match, team, player, and article modules.
+      - Implemented cronjobs to trigger events based on game status changes.
+      - Integrated Firebase socket for real-time updates and notifications.
+      - Utilized Redis for caching scorecard data and as a message broker between the API server and the Java parser.
       - Managed code deployment using Docker.
     keywords:
       - Node Express Js
@@ -265,13 +240,12 @@ projects:
       - Frontend Developer
     type: application
     highlights:
-      - Wrote the Buyer module APIs i.e. authentication, Cart and wishlist management.
-      - Wrote order and review management module.
-      - Developed product inventory module which includes Product CRUD, Product media
-        uploads and scaling.
-      - Developed deployment script and Cron Jobs for auto backup.
-      - Generated pdf invoice with pdfkit.
-      - Instamojo payment gateway integration
+      - Developed APIs for the Buyer module, including authentication, cart, and wishlist management.
+      - Created order and review management modules for comprehensive order handling.
+      - Designed and implemented a product inventory module, including product CRUD operations and media uploads with scaling.
+      - Developed deployment scripts and cron jobs for automated backups.
+      - Generated PDF invoices using PDFKit.
+      - Integrated the Instamojo payment gateway for secure transactions.
     keywords:
       - Python Django
       - JQuery
@@ -285,7 +259,56 @@ projects:
       - Bash
       - Pdfkit
       - wkhtmltopdf
-    url: https://www.machinenmotor.com
+    # url: https://www.machinenmotor.com
+  - name: Medwisor
+    description:
+      A platform which provides expert opinions and getting appointments
+      on the go.
+    startDate: "2018-12-01"
+    endDate: "2019-04-01"
+    roles:
+      - Backend Developer
+    type: application
+    highlights:
+      - Designed the core architecture for the project and prepared a Node.js ES6 boilerplate with Sequelize.
+      - Developed three microservices for Patient, Hospital, and Admin portals, enabling inter-service communication via HTTP.
+      - Created utilities for image scaling with Sharp, video scaling with FFMPEG, and PDF conversion with Puppeteer and Headless Chrome.
+      - Set up Bitbucket pipelines for continuous integration and deployment.
+      - Integrated the goCash payment gateway to streamline payment processing.
+    keywords:
+      - Node Express Js
+      - MySQL
+      - Sequelize
+      - Bash
+      - Sharp
+      - FFMPEG
+      - Docker
+      - Puppeteer
+      - Headless Chrome
+      - Bitbucket pipeline
+    # url: https://www.medwisor.com/
+  - name: Portea
+    description: A mini app for Portea.
+    startDate: "2019-08-01"
+    endDate: "2019-08-30"
+    roles:
+      - Backend Team Lead
+    type: application
+    highlights:
+      - Designed the core architecture of the project and managed a team of 2 developers.
+      - Reviewed pull requests to ensure code quality and consistency.
+      - Handled code deployment using Docker and GitLab CI/CD for streamlined operations.
+    keywords:
+      - Node Express Js
+      - MySQL
+      - Knex
+      - Docker
+      - Gitlab CI/CD
+      - Leadership
+      - Time Management
+      - Code Review
+      - Swagger
+    # url: https://www.porteaincontrol.com/
 languages:
   - language: Hindi
   - language: English
