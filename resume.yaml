@@ -12,11 +12,7 @@ basics:
   phone: "+919944299002"
   url: https://govind.guru
   summary:
-    Results-oriented and versatile Backend Developer with 8 years of experience in developing and managing complex backend
-    architectures and robust digital products. Proven track record of leading development teams in enterprise-wide projects,
-    with a focus on quality, delivery, and reliability. Formerly with CoinSwitch, UrbanPiper, and Cartoon Mango Digital.
-    Passionate about automating repetitive workflows and enhancing operational efficiency. Skilled mentor, having guided
-    over 10+ team members. Strong time management skills and commitment to delivering high-quality solutions.
+    Results-oriented and versatile Backend Developer with 8 years of experience in developing and managing complex backend architectures and robust digital products. Proven track record of leading development teams in enterprise-wide projects, focusing on quality, delivery, and reliability. Formerly with CoinSwitch, UrbanPiper, and Cartoon Mango Digital. Passionate about automating repetitive workflows and enhancing operational efficiency. Skilled mentor, having guided over 10+ team members. Strong time management skills and commitment to delivering high-quality solutions.
     Skilled in Python, JavaScript, Golang, Rest APIs, Docker, GIT, AWS, Pipelines and Grafana.
   location:
     address: ""
@@ -34,9 +30,9 @@ basics:
     - network: Calendly
       username: connect-govinds
       url: https://calendly.com/connect-govinds
-  # - network: HackerRank
-  #   username: govindsinghr3
-  #   url: https://www.hackerrank.com/govindsinghr3
+    # - network: HackerRank
+    #   username: govindsinghr3
+    #   url: https://www.hackerrank.com/govindsinghr3
 work:
   - name: PeepalCo (CoinSwitch)
     location: Bengaluru, India
@@ -94,12 +90,12 @@ education:
     studyType: Master
     startDate: "2014-07-01"
     endDate: "2016-07-01"
-  - institution: Mohan Lal Sukhadia University, Udaipur
-    url: https://www.mlsu.ac.in/
-    area: Computer Applications
-    studyType: Bachelor
-    startDate: "2010-07-01"
-    endDate: "2013-07-01"
+  # - institution: Mohan Lal Sukhadia University, Udaipur
+  #   url: https://www.mlsu.ac.in/
+  #   area: Computer Applications
+  #   studyType: Bachelor
+  #   startDate: "2010-07-01"
+  #   endDate: "2013-07-01"
 skills:
   - name: Languages
     keywords:
@@ -271,7 +267,7 @@ projects:
     type: application
     highlights:
       - Designed the core architecture for the project and prepared a Node.js ES6 boilerplate with Sequelize.
-      - Developed three microservices for Patient, Hospital, and Admin portals, enabling inter-service communication via HTTP.
+      - Developed 3 microservices for Patient, Hospital, and Admin portals, enabling inter-service communication via HTTP.
       - Created utilities for image scaling with Sharp, video scaling with FFMPEG, and PDF conversion with Puppeteer and Headless Chrome.
       - Set up Bitbucket pipelines for continuous integration and deployment.
       - Integrated the goCash payment gateway to streamline payment processing.
@@ -287,34 +283,43 @@ projects:
       - Headless Chrome
       - Bitbucket pipeline
     # url: https://www.medwisor.com/
-  - name: Portea
-    description: A mini app for Portea.
-    startDate: "2019-08-01"
-    endDate: "2019-08-30"
-    roles:
-      - Backend Team Lead
-    type: application
+  # - name: Portea
+  #   description: A mini app for Portea.
+  #   startDate: "2019-08-01"
+  #   endDate: "2019-08-30"
+  #   roles:
+  #     - Backend Team Lead
+  #   type: application
+  #   highlights:
+  #     - Designed the core architecture of the project and managed a team of 2 developers.
+  #     - Reviewed pull requests to ensure code quality and consistency.
+  #     - Handled code deployment using Docker and GitLab CI/CD for streamlined operations.
+  #   keywords:
+  #     - Node Express Js
+  #     - MySQL
+  #     - Knex
+  #     - Docker
+  #     - Gitlab CI/CD
+  #     - Leadership
+  #     - Time Management
+  #     - Code Review
+  #     - Swagger
+  #   # url: https://www.porteaincontrol.com/
+volunteer:
+  - organization: Open Source
+    position: Contributor
+    startDate: "2021-11-16"
+    summary: Contributing to open source tools used in regular workflow.
+    url: https://github.com/search?q=is%3Apr+is%3Aclosed+author%3Aguruor&type=pullrequests
     highlights:
-      - Designed the core architecture of the project and managed a team of 2 developers.
-      - Reviewed pull requests to ensure code quality and consistency.
-      - Handled code deployment using Docker and GitLab CI/CD for streamlined operations.
-    keywords:
-      - Node Express Js
-      - MySQL
-      - Knex
-      - Docker
-      - Gitlab CI/CD
-      - Leadership
-      - Time Management
-      - Code Review
-      - Swagger
-    # url: https://www.porteaincontrol.com/
-languages:
-  - language: Hindi
-  - language: English
+      - Insomnia importer was not able to import GraphQL APIs from the Postman collection v2.x, Added support for it.
+      - Various small contributions to neovim plugins.
 interests:
   - name: Entertainment
     keywords:
       - Movies
       - Tv Series
   - name: Mentoring
+# languages:
+#   - language: Hindi
+#   - language: English
