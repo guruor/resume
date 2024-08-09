@@ -1,3 +1,6 @@
+import { exec } from "node:child_process";
+import { promisify } from "node:util";
+const execAsync = promisify(exec);
 import { promises as fs } from "node:fs";
 import path from "node:path";
 import * as theme from "jsonresume-theme-stackoverflow";
@@ -56,6 +59,34 @@ async function generatePdf() {
   console.log("Generated PDF from HTML");
 }
 
+async function generateRenderCV() {
+  await convertYamlToJson();
+  console.log("Converting JSON resume format to renderCV");
+  const { conv_stdout, conv_stderr } = await execAsync(
+    `jsonresume_to_rendercv resume.json renderCVResume.yaml`,
+    { cwd: RELEASE_DIR },
+  );
+
+  if (conv_stderr) {
+    console.error(`Error converting to RenderCV YAML format: ${conv_stderr}`);
+    return;
+  }
+
+  console.log(`RenderCV conversion output: ${conv_stdout}`);
+  console.log("Rendering RenderCV format");
+
+  const { stdout, stderr } = await execAsync(`rendercv render renderCVResume.yaml`, {
+    cwd: RELEASE_DIR,
+  });
+
+  if (stderr) {
+    console.error(`Error output from RenderCV: ${stderr}`);
+    return;
+  }
+
+  console.log(`RenderCV output: ${stdout}`);
+}
+
 const argv = yargs(hideBin(process.argv)).argv;
 
 if (argv.json) {
@@ -64,4 +95,6 @@ if (argv.json) {
   generateHtml();
 } else if (argv.pdf) {
   generatePdf();
+} else if (argv.rendercv) {
+  generateRenderCV();
 }

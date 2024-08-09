@@ -2,9 +2,11 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
+		"preinstall": "echo 'Installing RenderCV Dependencies...' && pip install jsonresume_to_rendercv rendercv",
 		"to_json": "node index.js --json",
 		"to_html": "node index.js --html",
-		"to_pdf": "node index.js --pdf"
+		"to_pdf": "node index.js --pdf",
+		"to_rendercv": "node index.js --rendercv"
 	},
 	"dependencies": {
 		"jsonresume-theme-stackoverflow": "^2.0.2",

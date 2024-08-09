@@ -21,15 +21,15 @@ basics:
     region: Rajasthan
     countryCode: IN
   profiles:
-    - network: LinkedIn
+    - network: linkedin
       username: connectgovinds
       url: https://www.linkedin.com/in/connectgovinds
-    - network: Github
+    - network: github
       username: guruor
       url: https://www.github.com/guruor
-    - network: Calendly
-      username: connect-govinds
-      url: https://calendly.com/connect-govinds
+    # - network: calendly
+    #   username: connect-govinds
+    #   url: https://calendly.com/connect-govinds
     # - network: HackerRank
     #   username: govindsinghr3
     #   url: https://www.hackerrank.com/govindsinghr3
@@ -117,7 +117,7 @@ skills:
       - MongoDB
       - Firebase
       - ClickHouse
-  - name: Tools
+  - name: Software
     keywords:
       - Git
       - Vim

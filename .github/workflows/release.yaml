@@ -32,6 +32,9 @@ jobs:
       - name: Rendering pdf
         run: npm run to_pdf
 
+      - name: Rendering RenderCV output
+        run: npm run to_rendercv
+
       - name: Set version as short sha
         run: echo "VERSION=`echo ${GITHUB_SHA} | cut -c1-8`" >> $GITHUB_ENV
 
@@ -65,6 +68,8 @@ jobs:
           mkdir gh-pages
           cp release/resume.html gh-pages/index.html
           cp release/resume.pdf gh-pages/
+          cp release/rendercv_output/*.html gh-pages/resume-mini.html
+          cp release/rendercv_output/*.pdf gh-pages/resume-mini.pdf
           echo "resume.govind.guru" > gh-pages/CNAME
 
       - name: Deploy to GitHub Pages
