@@ -1,0 +1,2 @@
+jsonresume_to_rendercv==0.1.0
+rendercv==1.13

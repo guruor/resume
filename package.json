@@ -2,7 +2,7 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"preinstall": "echo 'Installing RenderCV Dependencies...' && pip install jsonresume_to_rendercv rendercv",
+		"preinstall": "echo 'Installing RenderCV Dependencies...' && pip install -r requirements.txt",
 		"to_json": "node index.js --json",
 		"to_html": "node index.js --html",
 		"to_pdf": "node index.js --pdf",
