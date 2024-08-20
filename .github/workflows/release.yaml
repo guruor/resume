@@ -73,9 +73,9 @@ jobs:
         run: |
           mkdir gh-pages
           cp release/resume.html gh-pages/index.html
-          cp release/resume.pdf gh-pages/
+          cp release/resume.pdf gh-pages/resume-detailed.pdf
           cp release/rendercv_output/*.html gh-pages/resume-mini.html
-          cp release/rendercv_output/*.pdf gh-pages/resume-mini.pdf
+          cp release/rendercv_output/*.pdf gh-pages/resume.pdf
           echo "resume.govind.guru" > gh-pages/CNAME
 
       - name: Deploy to GitHub Pages
