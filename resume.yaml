@@ -35,7 +35,7 @@ basics:
     #   url: https://www.hackerrank.com/govindsinghr3
 work:
   - name: PeepalCo (CoinSwitch)
-    location: Bengaluru, India
+    location: Remote
     description: PeepalCo is a canopy for brands serving India with tailored wealth-tech products, Making Money Equal for All.
     url: https://peepal.co/
     startDate: "2021-12-20"
@@ -43,14 +43,13 @@ work:
     position: Senior Software Engineer
     summary: ""
     highlights:
-      - Developed and maintained a dedicated service for fee and discount management, provided more flexibility of configuring fee and discounts for different assets
-      - Developed offer generation module for better flexibility feein/feeout construct, it stored the structured details of various stages of fee, discount, GST and TDS for better audit and tracibility.
-      - Contributed towards the relibility by preparing multiple SOPs and dashboards, resulted in faster incident response
-        times.
-      - Created comprehensive documentation of various in house services, reduced onboarding time for new hires by 40%
+      - Developed and maintained a dedicated service for fee and discount management, increasing flexibility in configuring fees and discounts for different assets.
+      - Created an offer generation module that enhanced flexibility in fee-in/fee-out constructs, storing structured details of various stages of fees, discounts, GST, and TDS for improved auditability and traceability.
+      - Contributed to system reliability by preparing multiple SOPs and dashboards, resulting in faster incident response times.
+      - Created comprehensive documentation for various in-house services, reducing onboarding time for new hires by 40%.
       - Conducted training sessions, promoting best practices and reducing code defects by 15%.
   - name: UrbanPiper Technology Pvt Ltd
-    location: Bengaluru, India
+    location: Remote
     description:
       UrbanPiper is the leading SaaS platform for restaurants and food businesses,
       providing various services to help manage operations more efficiently.
@@ -133,6 +132,15 @@ skills:
       - Leadership
       - Time Management
 projects:
+  - name: Open Source
+    roles:
+      - Contributor
+    startDate: "2021-11-16"
+    description: Contributed to open-source tools used in my regular workflow and made various enhancements to Neovim plugins. Visit my GitHub profile for more details.
+    url: https://github.com/search?q=is%3Apr+is%3Aclosed+author%3Aguruor&type=pullrequests
+    highlights:
+      - Insomnia importer was not able to import GraphQL APIs from the Postman collection v2.x, Added support for it.
+      - Various small contributions to neovim plugins.
   - name: Offer Service
     description: The Offer Service is a multi-tenant backend service designed to handle various asset types and complex calculation logic for trading activities. It includes comprehensive validation checks and stages calculations to enhance trading accuracy, auditability, and system reliability
     startDate: "2022-04-28"
@@ -173,9 +181,7 @@ projects:
       - S3
     # url: ""
   - name: Atlas
-    description:
-      Product comprises order and customer analytics, marketing campaign
-      creation and invoice module.
+    description: Atlas is a comprehensive service that includes order and customer analytics, marketing campaign creation, and an invoice module.
     startDate: "2019-12-23"
     endDate: "2019-08-30"
     roles:
@@ -203,9 +209,7 @@ projects:
       - Code Review
     url: https://atlas.urbanpiper.com/
   - name: Cricket.com
-    description:
-      A platform to provide cricket updates including score, schedules, articles,
-      fantasy points, etc.
+    description: A platform to provide cricket updates including score, schedules, articles, player stats and fantasy points, etc.
     startDate: "2018-07-01"
     endDate: "2018-12-01"
     roles:
@@ -228,7 +232,7 @@ projects:
       - Docker
     url: https://www.cricket.com/
   - name: Machine & Motors
-    description: "eCommerce portal for types of machinery "
+    description: Machine & Motors is a platform similar to IndiaMart, designed to connect buyers and sellers of industrial machines and motors, streamlining transactions and facilitating business growth.
     startDate: "2017-03-01"
     endDate: "2018-01-01"
     roles:
@@ -257,9 +261,7 @@ projects:
       - wkhtmltopdf
     # url: https://www.machinenmotor.com
   - name: Medwisor
-    description:
-      A platform which provides expert opinions and getting appointments
-      on the go.
+    description: Medwisor is a platform similar to Practo, designed with a microservice architecture to provide expert medical opinions, hospital and patient onboarding, and seamless appointment booking on the go.
     startDate: "2018-12-01"
     endDate: "2019-04-01"
     roles:
@@ -305,15 +307,15 @@ projects:
   #     - Code Review
   #     - Swagger
   #   # url: https://www.porteaincontrol.com/
-volunteer:
-  - organization: Open Source
-    position: Contributor
-    startDate: "2021-11-16"
-    summary: Contributing to open source tools used in regular workflow.
-    url: https://github.com/search?q=is%3Apr+is%3Aclosed+author%3Aguruor&type=pullrequests
-    highlights:
-      - Insomnia importer was not able to import GraphQL APIs from the Postman collection v2.x, Added support for it.
-      - Various small contributions to neovim plugins.
+# volunteer:
+#   - organization: Open Source
+#     position: Contributor
+#     startDate: "2021-11-16"
+#     summary: Contributing to open source tools used in regular workflow.
+#     url: https://github.com/search?q=is%3Apr+is%3Aclosed+author%3Aguruor&type=pullrequests
+#     highlights:
+#       - Insomnia importer was not able to import GraphQL APIs from the Postman collection v2.x, Added support for it.
+#       - Various small contributions to neovim plugins.
 interests:
   - name: Entertainment
     keywords:
